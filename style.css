@@ -173,7 +173,7 @@ polyline {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 18vw;
+  margin-top: 22vw;
   width: 100%;
   padding: 0 7vw;
 }
@@ -189,7 +189,7 @@ polyline {
 }
 #imgLeft h1 span {
   font-weight: 600;
-  font-size: 2vw;
+  font-size: 2.4vw;
   color: #14cf93;
   font-family: "Mazius Review 20.09";
   font-style: italic;
@@ -206,8 +206,31 @@ polyline {
 }
 #imgRight .imgContainer {
   position: absolute;
-  width: 30vw;
-  height: 45vw;
+  width: 27vw;
+  height: 40vw;
+  filter: grayscale();
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.2s;
   border-radius: 1vw;
-  background-color: red;
+}
+#imgRight .imgContainer:hover {
+  filter: grayscale(0);
+}
+
+#imgRight .imgContainer:nth-child(1) {
+  transform: translate(-40%, -8%) rotate(-20deg);
+  background-image: url(https://images.unsplash.com/photo-1570378105830-722dd066dc01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyNnx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+}
+#imgRight .imgContainer:nth-child(2) {
+  transform: translate(-15%, 0) rotate(-15deg);
+  background-image: url(https://images.unsplash.com/photo-1514626585111-9aa86183ac98?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fHBvcnRyYWl0fGVufDB8fDB8fHww);
+  background-position: center;
+  background-size: cover;
+}
+#imgRight .imgContainer:nth-child(3) {
+  transform: translate(20%, 10%) rotate(-5deg);
+  background-image: url(https://images.unsplash.com/photo-1586770802838-e524ec9018a8?q=80&w=1498&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
 }
